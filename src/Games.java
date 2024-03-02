@@ -3,10 +3,10 @@ public class Games {
     private String creator;
     private String platform; //console,BoardGame, CardGame, computer, handheld, mobile
     private Double currentPrice;
-    private String playerNum;
+    private String playerNum; // Strings: 1-4, 1+, unlimited
     private Double playingTime;
-    private String difficulty;
-    private int starReviews;
+    private String difficulty;//easy medium hard
+    private int starReviews;//1-5
 
 
 
@@ -22,6 +22,8 @@ public class Games {
         this.difficulty = difficulty;
         this.starReviews = starReviews;
     }
+
+
     //accessor methods
     public String getGameType(){
         return gameType;
@@ -47,6 +49,8 @@ public class Games {
     public int getStarReviews(){
         return starReviews;
     }
+
+
     //mutator methods
     public void setGameType(String gameType){
         this.gameType = gameType;
