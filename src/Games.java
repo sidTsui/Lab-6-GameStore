@@ -1,11 +1,11 @@
 public class Games {
     private String gameType; //BoardGame, CardGame, VidoeGame
     private String creator;
-    private String platform; //console,BoardGame, CardGame, computer, handheld, mobile
+    private String platform; //VideoGame, BoardGame, CardGame
     private Double currentPrice;
     private String playerNum; // Strings: 1-4, 1+, unlimited
-    private Double playingTime;
-    private String difficulty;//easy medium hard
+    private Double playingTime; // average time
+    private String difficulty;//easy, medium, hard, or chance
     private int starReviews;//1-5
 
 
