@@ -7,7 +7,7 @@
  */
 //source: help from inclass lecture slides, and javatpoint.com
 
-public class RandomGameSelector {
+public class RandomGame{
     public static void main(String[] args) {
         //initializing array of strings
         String[] games = {"Betrayal at House on the Hill", "Crokinole", "Cthulu Dice", "Doom", "Dungeons & Dragons",
