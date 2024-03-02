@@ -1,23 +1,23 @@
 public class Games {
-    private String gameType; //BoardGame, CardGame, VidoeGame
+    private String gameName;
+    private String gameType; //BoardGame, CardGame, VideoGame
     private String creator;
-    private String platform; //VideoGame, BoardGame, CardGame
     private Double currentPrice;
-    private String playerNum; // Strings: 1-4, 1+, unlimited
+    private int maxPlayerNum; // max player number
     private Double playingTime; // average time
     private String difficulty;//easy, medium, hard, or chance
-    private int starReviews;//1-5
+    private Double starReviews;//1-5
 
 
 
    //constructor
-   public Games(String gameType, String creator, String platform, Double currentPrice,
-                 String playerNum, Double playingTime, String difficulty,int starReviews){
+   public Games(String gameName, String gameType, String creator, Double currentPrice,
+                 int maxPlayerNum, Double playingTime, String difficulty,Double starReviews){
+        this.gameName = gameName;
         this.gameType = gameType;
         this.creator = creator;
-        this.platform = platform;
         this.currentPrice = currentPrice;
-        this.playerNum = playerNum;
+        this.maxPlayerNum = maxPlayerNum;
         this.playingTime = playingTime;
         this.difficulty = difficulty;
         this.starReviews = starReviews;
@@ -25,47 +25,33 @@ public class Games {
 
 
     //accessor methods
-    public String getGameType(){
-        return gameType;
-    }
-    public String getCreator(){
-        return creator;
-    }
-    public String getPlatform(){
-        return platform;
-    }
+    public String getGameName(){return gameName;}
+    public String getGameType(){return gameType;}
+    public String getCreator(){return creator;}
     public Double getCurrentPrice(){
         return currentPrice;
     }
-    public String getPlayerNum(){
-        return playerNum;
+    public int getMaxPlayerNum(){
+        return maxPlayerNum;
     }
     public Double getPlayingTime(){
         return playingTime;
     }
-    public String getDifficulty(){
-        return difficulty;
-    }
-    public int getStarReviews(){
+    public String getDifficulty(){return difficulty;}
+    public Double getStarReviews(){
         return starReviews;
     }
 
 
     //mutator methods
-    public void setGameType(String gameType){
-        this.gameType = gameType;
-    }
-    public void setCreator(String creator){
-        this.creator = creator;
-    }
-    public void setPlatform(String platform){
-        this.platform = platform;
-    }
+    public void setGameName(String gameName){this.gameName = gameName;}
+    public void setGameType(String gameType){this.gameType = gameType;}
+    public void setCreator(String creator){this.creator = creator;}
     public void setCurrentPrice(Double currentPrice){
         this.currentPrice = currentPrice;
     }
-    public void setPlayerNum(String playerNum){
-        this.playerNum = playerNum;
+    public void setMaxPlayerNum(int maxPlayerNum){
+        this.maxPlayerNum = maxPlayerNum;
     }
     public void setPlayingTime(Double playingTime){
         this.playingTime = playingTime;
@@ -73,7 +59,7 @@ public class Games {
     public void setDifficulty(String difficulty){
         this.difficulty = difficulty;
     }
-    public void setStarReviews(int starReviews){
+    public void setStarReviews(Double starReviews){
         this.starReviews = starReviews;
     }
 }

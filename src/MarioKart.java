@@ -1,9 +1,15 @@
 public class MarioKart extends VideoGames{
     private String characterName;
 
-    public MarioKart(String gameType, String creator, String platform, Double currentPrice, String playerNum, Double playingTime, String difficulty, int starReviews) {
-        super(gameType, creator, platform, currentPrice, playerNum, playingTime, difficulty, starReviews);
+    public MarioKart(String gameName, String gameType, String creator,
+                     Double currentPrice, int maxPlayerNum, Double playingTime,
+                     String difficulty, Double starReviews) {
+
+        super(gameName, gameType, creator, currentPrice, maxPlayerNum,
+                playingTime, difficulty, starReviews);
     }
+
+
 
     public String getCharacterName(){
         return this.characterName = characterName;

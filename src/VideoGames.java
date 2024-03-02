@@ -1,11 +1,11 @@
 public class VideoGames extends Games {
     private String consoleType;
 
-    public VideoGames(String gameType, String creator, String platform,
-                      Double currentPrice, String playerNum, Double playingTime,
-                      String difficulty, int starReviews) {
-        super(gameType, creator, platform, currentPrice,
-                playerNum, playingTime, difficulty, starReviews);
+    public VideoGames(String gameName, String gameType, String creator,
+                      Double currentPrice, int maxPlayerNum, Double playingTime,
+                      String difficulty, Double starReviews) {
+        super(gameName, gameType, creator, currentPrice,
+                maxPlayerNum, playingTime, difficulty, starReviews);
     }
 
     public String getConsoleType(){

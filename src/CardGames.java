@@ -1,13 +1,13 @@
 public class CardGames extends Games {
     private boolean usesJoker;
 
-    public CardGames(String gameType, String creator, String platform,
-                     Double currentPrice, String playerNum, Double playingTime,
-                     String difficulty, int starReviews) {
-        super(gameType, creator, platform, currentPrice,
-                playerNum, playingTime, difficulty, starReviews);
+    public CardGames(String gameName, String gameType, String creator,
+                     Double currentPrice, int maxPlayerNum, Double playingTime,
+                     String difficulty, Double starReviews) {
+        super(gameName, gameType, creator, currentPrice,
+                maxPlayerNum, playingTime, difficulty, starReviews);
     }
-    public boolean getUsesJoke(){
+    public boolean getUsesJoker(){
         return this.usesJoker;
     }
     public void setUsesJoker(boolean usesJoker){
