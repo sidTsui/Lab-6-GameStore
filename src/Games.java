@@ -3,13 +3,16 @@ public class Games {
     private String creator;
     private String platform; //console,BoardGame, CardGame, computer, handheld, mobile
     private Double currentPrice;
-    private int playerNum;
+    private String playerNum;
     private Double playingTime;
     private String difficulty;
     private int starReviews;
 
-    public Games(String gameType, String creator, String platform, Double currentPrice,
-                 int playerNum, Double playingTime, String difficulty,int starReviews){
+
+
+   //constructor
+   public Games(String gameType, String creator, String platform, Double currentPrice,
+                 String playerNum, Double playingTime, String difficulty,int starReviews){
         this.gameType = gameType;
         this.creator = creator;
         this.platform = platform;
@@ -19,7 +22,7 @@ public class Games {
         this.difficulty = difficulty;
         this.starReviews = starReviews;
     }
-
+    //accessor methods
     public String getGameType(){
         return gameType;
     }
@@ -32,7 +35,7 @@ public class Games {
     public Double getCurrentPrice(){
         return currentPrice;
     }
-    public int getPlayerNum(){
+    public String getPlayerNum(){
         return playerNum;
     }
     public Double getPlayingTime(){
@@ -44,6 +47,7 @@ public class Games {
     public int getStarReviews(){
         return starReviews;
     }
+    //mutator methods
     public void setGameType(String gameType){
         this.gameType = gameType;
     }
@@ -56,7 +60,7 @@ public class Games {
     public void setCurrentPrice(Double currentPrice){
         this.currentPrice = currentPrice;
     }
-    public void setPlayerNum(int playerNum){
+    public void setPlayerNum(String playerNum){
         this.playerNum = playerNum;
     }
     public void setPlayingTime(Double playingTime){
