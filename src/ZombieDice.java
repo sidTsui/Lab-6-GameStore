@@ -1,2 +1,2 @@
-public class ZombieDice extends BoardGames{
-}
+//public class ZombieDice extends BoardGames{
+//}

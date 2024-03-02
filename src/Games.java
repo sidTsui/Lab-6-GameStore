@@ -8,7 +8,18 @@ public class Games {
     private String difficulty;//easy, medium, hard, or chance
     private Double starReviews;//1-5
 
-
+    @Override
+    public String toString() {
+        return String.format("%s %s%n%s %s%n%s %s%n%s $%.2f%n%s %d players %n%s %.2f minutes %n%s %s%n%s %.1f stars",
+                "Game Name: ",gameName,
+                "Game Type: ", gameType,
+                "Creator: ", creator,
+                "Current Cost: ", currentPrice,
+                "Max Players: ", maxPlayerNum,
+                "Average Playing Time: ", playingTime,
+                "Difficulty Level: ", difficulty,
+                "Rating: ", starReviews);
+   }
 
    //constructor
    public Games(String gameName, String gameType, String creator, Double currentPrice,

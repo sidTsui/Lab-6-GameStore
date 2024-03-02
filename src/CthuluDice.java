@@ -1,2 +1,2 @@
-public class CthuluDice extends BoardGames{
-}
+//public class CthuluDice extends BoardGames{
+//}

@@ -34,16 +34,21 @@ public class GamesTsuiWatkinSegoviano {
         System.out.println("2. Board Game");
         System.out.println("3. Card Game");
         int option = scanner.nextInt();
+
         Games[] GameOfChoice;
 
+        String category;
         switch (option) {
             case 1:
+                category = " video game ";
                 GameOfChoice = VideoGames;
                 break;
             case 2:
+                category = " board game ";
                 GameOfChoice = BoardGames;
                 break;
             case 3:
+                category = " card game ";
                 GameOfChoice = CardGames;
                 break;
             default:
@@ -51,24 +56,27 @@ public class GamesTsuiWatkinSegoviano {
                 return;
         }
 
-        System.out.println("Game Name \t Cost \t Max Players \t Average Play Time \t Rating");
+        System.out.printf("%s %-20s %-20s %-22s %-30s %-20s%n", "\t", "Game Name", "Cost", "Max Players", "Average Play Time", "Rating");
+        System.out.println();
         for (int i = 0; i < GameOfChoice.length; i++) {
             Games game = GameOfChoice[i];
-            System.out.println(i + 1 + "\t" + game.getGameName() + "\t" + game.getCurrentPrice()
-                    + "\t" + game.getMaxPlayerNum() + "\t" + game.getPlayingTime() +
-                    "\t" + game.getStarReviews());
+            System.out.printf("%-4d %-20s $%-20.2f %-22d %.2f %-23s  %-20.1f%n",
+                    (i+1), game.getGameName(), game.getCurrentPrice(),
+                    game.getMaxPlayerNum(), game.getPlayingTime(), "minutes" , game.getStarReviews());
         }
-        System.out.println("Which" + option + "do you want to play?");
+        System.out.println("Which" + category + "do you want to play?");
         int choice = scanner.nextInt() - 1;
 
         //Error handling if input is out of bounds
         if (choice < 0 || choice >= GameOfChoice.length) {
             System.out.println("Invalid input.Please enter a value from the options given.");
-            return;
+        }
+        else {
+           Games gameChoice = GameOfChoice[choice];
+            System.out.printf("Details:%n");
+            System.out.println(gameChoice.toString());
         }
 
-        Games GameChoice = GameOfChoice[choice];
-        System.out.println(GameChoice);
         System.out.println("Are you sure this is the game you want to purchase? (Y/N)");
         scanner.nextLine();
         String confirm = scanner.nextLine();
@@ -80,6 +88,7 @@ public class GamesTsuiWatkinSegoviano {
         System.out.println("How many copies would you like to purchase?");
         int copies = scanner.nextInt();
 
+        Games GameChoice = GameOfChoice[choice];
         double total = GameChoice.getCurrentPrice() * copies;
         System.out.println("Your total cost is: $" + total);
 
