@@ -1,5 +1,5 @@
 public class Betrayal_at_House_on_the_Hill extends BoardGames{
-private String characterName;
+    private String characterName;
 
     public Betrayal_at_House_on_the_Hill(String gameName, String gameType, String creator,
                      Double currentPrice, int maxPlayerNum, Double playingTime,
