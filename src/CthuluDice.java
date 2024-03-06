@@ -1,5 +1,5 @@
 public class CthuluDice extends BoardGames{
-    private String characterName;
+    private String specialItemsIncluded;
 
     public CthuluDice(String gameName, String gameType, String creator,
                      Double currentPrice, int maxPlayerNum, Double playingTime,
@@ -9,12 +9,10 @@ public class CthuluDice extends BoardGames{
                 playingTime, difficulty, starReviews);
     }
 
-
-
-    public String getCharacterName(){
-        return this.characterName = characterName;
+    public String getSpecialItemsIncluded(){
+        return this.specialItemsIncluded = specialItemsIncluded;
     }
-    public void setCharacterName(String characterName){
-        this.characterName = characterName;
+    public void setSpecialItemsIncluded(String specialItemsIncluded){
+        this.specialItemsIncluded = specialItemsIncluded;
     }
 }
