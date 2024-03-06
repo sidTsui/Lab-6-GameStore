@@ -12,22 +12,22 @@ public class GamesTsuiWatkinSegoviano {
         Scanner scanner = new Scanner(System.in);
 
         Games[] VideoGames = {
-                new MarioKart("MarioKart", "Video Game", "Nintendo", 59.99, 4, 4.0, "medium", 4.9),
-                //new StardewValley(),
-                //new Tetris(),
-                //new Doom()
+                new MarioKart("Mario Kart", "Video Game", "Nintendo", 59.99, 4, 4.00, "medium", 4.9),
+                new StardewValley("Stardew Valley", "Video Game", "ConcernedApe", 14.99, 4, 10500.00, "medium", 5.0),
+                new Tetris("Tetris", "Video Game", "Alexey Pajitnov", 0.00, 4, 180.00, "medium", 4.5),
+                new Doom("Doom", "Video Game", "id Software", 19.99, 4, 690.00, "hard", 5.0),
         };
         Games[] BoardGames = {
-                //new ZombieDice(),
-                //new Betrayal_at_House_on_the_Hill(),
-                //new WarHammer(),
-                // new Fluxx(),
+                new ZombieDice("Zombie Dice", "Board Game", "Steve Jackson", 15.95, 8, 20.00, "easy", 4.8),
+                new Betrayal_at_House_on_the_Hill("Betrayal at House on the Hill", "Board Game", "Avalon Hill", 40.95, 6, 120.00, "easy", 4.5),
+                new WarHammer("Warhammer", "Board Game", "Games Workshop", 178.50, 8, 180.00, "medium", 5.0),
                 new PoetryForNeanderthals("Poetry for Neanderthals", "Board Game", "Exploding Kittens", 20.00, 12, 20.00, "hard", 4.8),
-                //new CthuluDice(),
+                new CthuluDice("Cthulu Dice", "Board Game", "Steve Jackson Games", 19.95, 6, 5.00, "easy", 2.6),
         };
         Games[] CardGames = {
                 new SushiGo("Sushi Go", "Card Game", "Gamewright Games", 11.99, 5, 20.00, "easy", 4.7)
-                //new LoveLetter()
+                new LoveLetter("Love Letter", "Card Game", "Seiji Kanai", 35.00, 4, 20.00, "easy", 3.6)
+                new Fluxx("Fluxx", "Card Game", "Looney Labs", 19.99, 6, 30.00, "easy", 2.9),
         };
         System.out.println("What type of game would you like to play? (please enter an integer response)");
         System.out.println("1. Video Game");
