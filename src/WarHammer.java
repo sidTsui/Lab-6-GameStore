@@ -1,5 +1,6 @@
 public class WarHammer extends BoardGames{
     private String specialItemsIncluded;
+    // special items include things like special dice, cards, or game pieces
 
     public WarHammer(String gameName, String gameType, String creator,
                      Double currentPrice, int maxPlayerNum, Double playingTime,
