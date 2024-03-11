@@ -9,6 +9,7 @@ public class CardGames extends Games {
     }
     public boolean getUsesJoker(){
         return this.usesJoker;
+        // usesJoker means is whether or not the card game includes the joker cards or not 
     }
     public void setUsesJoker(boolean usesJoker){
         this.usesJoker = usesJoker;
