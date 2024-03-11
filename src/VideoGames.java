@@ -1,6 +1,6 @@
 public class VideoGames extends Games {
     private String consoleType;
-
+    // consoleType refers to things like handheld, home video game, microConsole 
     public VideoGames(String gameName, String gameType, String creator,
                       Double currentPrice, int maxPlayerNum, Double playingTime,
                       String difficulty, Double starReviews) {
