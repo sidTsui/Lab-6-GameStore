@@ -10,6 +10,7 @@ public class Betrayal_at_House_on_the_Hill extends BoardGames{
     }
 
     public String getSpecialItemsIncluded(){
+        // special items include things like special dice, cards, or game pieces
         return this.specialItemsIncluded = specialItemsIncluded;
     }
     public void setSpecialItemsIncluded(String specialItemsIncluded){
