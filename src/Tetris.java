@@ -1,6 +1,7 @@
 public class Tetris extends VideoGames{
     
     // tetris doesn't have characters so set/get backgroundColor instead
+    // would be black, white, grey
     private String backgroundColor;
 
     public Tetris(String gameName, String gameType, String creator,
