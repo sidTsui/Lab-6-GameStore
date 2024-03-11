@@ -9,6 +9,7 @@ public class BoardGames extends Games {
             maxPlayerNum, playingTime, difficulty, starReviews);
     }
     public Double getBoardSize(){
+        // boardSize is the width of the board
         return this.boardSize;
     }
     public void setBoardSize(Double boardSize){
