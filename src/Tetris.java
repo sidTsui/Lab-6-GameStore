@@ -1,5 +1,7 @@
 public class Tetris extends VideoGames{
-    private String characterName;
+    
+    // tetris doesn't have characters so set/get backgroundColor instead
+    private String backgroundColor;
 
     public Tetris(String gameName, String gameType, String creator,
                      Double currentPrice, int maxPlayerNum, Double playingTime,
@@ -11,10 +13,10 @@ public class Tetris extends VideoGames{
 
 
 
-    public String getCharacterName(){
-        return this.characterName = characterName;
+    public String getBackgroundColor(){
+        return this.backgroundColor = backgroundColor;
     }
-    public void setCharacterName(String characterName){
-        this.characterName = characterName;
+    public void setBackgroundColor(String backgroundColor){
+        this.backgroundColor = backgroundColor;
     }
 }
