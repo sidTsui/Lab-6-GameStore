@@ -1,5 +1,6 @@
 public class ZombieDice extends BoardGames{
     private String specialItemsIncluded;
+    // special items include things like special dice, cards, or game pieces
 
     public ZombieDice(String gameName, String gameType, String creator,
                      Double currentPrice, int maxPlayerNum, Double playingTime,
